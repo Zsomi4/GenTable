@@ -7,10 +7,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>{{name}}</td>
-            <td>{{city}}</td>
-            <td>{{salary}}</td>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.name}}</td>
+            <td>{{employee.city}}</td>
+            <td>{{employee.salary}}</td>
         </tr>
     </tbody>
 </table>
